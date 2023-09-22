@@ -1,0 +1,17 @@
+---
+const {name, details} = Astro.props;
+---
+
+<div class="service-f-single fade-top">
+  <div class="single-item">
+    <div class="intro-btn">
+      <h4>{name}</h4>
+    </div>
+  </div>
+  <div class="single-item p-single p-sm body-cn">
+    <p>
+      {details}
+    </p>
+  </div>
+  <button class="toggle-service-f"></button>
+</div>

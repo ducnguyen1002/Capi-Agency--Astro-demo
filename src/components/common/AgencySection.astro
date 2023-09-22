@@ -1,0 +1,53 @@
+---
+import SkillBar from "./SkillBar.astro";
+
+---
+
+<section class="section agency">
+  <div class="container">
+    <div class="row gaper align-items-center">
+      <div class="col-12 col-lg-6">
+        <div class="agency__thumb">
+          <img
+            src="assets/images/agency/thumb-one.png"
+            alt="Image"
+            class="thumb-one fade-left"
+          />
+          <img
+            src="assets/images/agency/thumb-two.png"
+            alt="Image"
+            class="thumb-two fade-right"
+          />
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="agency__content section__content">
+          <span class="sub-title">
+            WELCOME
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <h2 class="title title-anim">
+            We are digital creative agency in London
+          </h2>
+          <div class="paragraph">
+            <p>
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation on the runway heading towards a
+              streamlined cloud solution going forward porttitor dictum sapien.
+            </p>
+          </div>
+          <div class="skill-wrap">
+            <SkillBar title="Website design" percent="75%" />
+            <SkillBar title="Digital Marketing" percent="90%" />
+          </div>
+          <div class="section__content-cta">
+            <a href="about-us.html" class="btn btn--primary">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="assets/images/star.png" alt="Image" class="star" />
+  <img src="assets/images/agency/dot-large.png" alt="Image" class="dot-large" />
+</section>

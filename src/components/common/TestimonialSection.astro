@@ -1,0 +1,64 @@
+---
+import TestimonialItem from "./TestimonialItem.astro";
+import TextSlider from "./TextSlider.astro";
+---
+
+<section class="section testimonial pt-0 position-relative">
+  <TextSlider href="#" title="Client's testimonial" type="testimonial" />
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-12 col-xxl-10">
+        <div class="testimonial-s__slider">
+          <TestimonialItem
+            imageURL="assets/images/testimonial/s-thumb.png"
+            content="posuere luctus orci. Donec vitae mattis quam, vitae temporarcu. Aenean non odio porttitor, convallis erat sit amet,facilisis velit. Nulla ornare convallis malesuada.Phasellus molestie, ipsum ac fringilla."
+            authorName="Daniel Smith"
+            authorRole="Senior engineer"
+          />
+           <TestimonialItem
+            imageURL="assets/images/testimonial/s-thumb-two.png"
+            content="posuere luctus orci. Donec vitae mattis quam, vitae temporarcu. Aenean non odio porttitor, convallis erat sit amet,facilisis velit. Nulla ornare convallis malesuada.Phasellus molestie, ipsum ac fringilla."
+            authorName="Daniel Smith"
+            authorRole="Senior engineer"
+          />
+           <TestimonialItem
+            imageURL="assets/images/testimonial/s-thumb-three.png"
+            content="posuere luctus orci. Donec vitae mattis quam, vitae temporarcu. Aenean non odio porttitor, convallis erat sit amet,facilisis velit. Nulla ornare convallis malesuada.Phasellus molestie, ipsum ac fringilla."
+            authorName="Daniel Smith"
+            authorRole="Senior engineer"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="slide-group justify-content-start">
+      <a
+        href="javascript:void(0)"
+        aria-label="previous item"
+        class="slide-btn prev-testimonial-three"
+      >
+        <i class="fa-light fa-angle-left"></i>
+      </a>
+      <a
+        href="javascript:void(0)"
+        aria-label="next item"
+        class="slide-btn next-testimonial-three"
+      >
+        <i class="fa-light fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="other-section">
+    <img
+      class="other-section-image"
+      src="assets/images/testimonial/s-thumb.png"
+      alt="Next Slide Image"
+    />
+  </div>
+  <div class="lines d-none d-lg-flex">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</section>

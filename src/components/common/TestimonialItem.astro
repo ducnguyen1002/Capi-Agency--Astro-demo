@@ -1,0 +1,42 @@
+---
+const {imageURL, content, authorName, authorRole} = Astro.props;
+
+---
+
+<div class="testimonial-s__slider-single">
+  <div class="row gaper align-items-center">
+    <div class="col-12 col-lg-4 col-xxl-4">
+      <div class="thumb">
+        <img src=`${imageURL}` alt="Image" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="322"
+          viewBox="0 0 44 322"
+          fill="none"
+          class="d-none d-lg-block"
+        >
+          <path
+            d="M43 -0.000976562V151.999L2 192.999H43V321.999"
+            stroke="#414141"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+      <div class="testimonial-s__content">
+        <div class="quote">
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="content">
+          <h4>
+           {content}
+          </h4>
+        </div>
+        <div class="content-cta">
+          <h5>{authorName}</h5>
+          <p>{authorRole}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

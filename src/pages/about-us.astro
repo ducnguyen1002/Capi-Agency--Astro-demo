@@ -1,0 +1,32 @@
+---
+import PageBanner from "@components/common/PageBanner.astro";
+import SponsorSection from "@components/common/SponsorSection.astro";
+import TeamMemberSlider from "@components/about-us/TeamMemberSlider.astro";
+import TestimonialSection from "@components/common/TestimonialSection.astro";
+import VideoModal from "@components/common/VideoModal.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import CTA from "@components/common/CTA.astro";
+import AgencySection from "@components/common/AgencySection.astro";
+---
+
+<MainLayout title="About Capi Agency">
+
+  <PageBanner
+    pageName="about us"
+    pageBreadcrumb="about us"
+    pageDescription="We're an UK-based top-notch design agency committed to partnering with good companies and hiring the right people for the right roles."
+  />
+
+  <VideoModal imageURL="assets/images/video-frame-two.png" videoURL="https://www.youtube.com/watch?v=RvreULjnzFo" modalImgURL="assets/images/modal-bg.png"/>
+
+  <AgencySection/>
+
+  <TeamMemberSlider/>
+
+  <TestimonialSection/>
+
+  <SponsorSection/>
+
+  <CTA/>
+
+</MainLayout>

@@ -1,0 +1,79 @@
+---
+import PortfolioItem from "./PortfolioItem.astro";
+import TextSlider from "../common/TextSlider.astro";
+---
+
+<section class="section portfolio pb-0 fade-wrapper position-relative">
+  <TextSlider type="portfolio" href="#" title="Digital Portfolio" />
+  <div class="container-fluid">
+    <div class="row gaper">
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/one.png"
+        title="Digital Marketing"
+      />
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/two.png"
+        title="Digital Marketing"
+      />
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/three.png"
+        title="Digital Marketing"
+      />
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/four.png"
+        title="Digital Marketing"
+      />
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/five.png"
+        title="Digital Marketing"
+      />
+
+      
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/six.png"
+        title="Digital Marketing"
+      />
+      <div class="col-12 col-sm-6 col-xl-3">
+        <div class="portfolio__single-alt-wrapper fade-top">
+          <div class="portfolio__single-alt topy-tilt">
+            <h4>
+              <a href="portfolio.html">view all work</a>
+            </h4>
+            <a href="portfolio.html" class="arr">
+              <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+            </a>
+            <img
+              src="assets/images/portfolio/dot.png"
+              alt="Image"
+              class="dot-one"
+            />
+            <img
+              src="assets/images/portfolio/dot.png"
+              alt="Image"
+              class="dot-two"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <PortfolioItem
+        href="#"
+        imageURL="assets/images/portfolio/seven.png"
+        title="Digital Marketing"
+      />
+    </div>
+  </div>
+  <div class="lines d-none d-lg-flex">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</section>

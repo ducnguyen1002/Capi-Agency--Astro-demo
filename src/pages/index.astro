@@ -1,0 +1,212 @@
+---
+import AgencySection from "@components/common/AgencySection.astro";
+import HomeBanner from "@components/home/HomeBanner.astro";
+import PortfolioSection from "@components/home/PortfolioSection.astro";
+import SponsorSection from "@components/common/SponsorSection.astro";
+import TestimonialSection from "@components/common/TestimonialSection.astro";
+import TextSlider from "@components/common/TextSlider.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+---
+
+<MainLayout title="Capi Agency">
+  <HomeBanner />
+
+  <AgencySection />
+
+  <PortfolioSection />
+
+  <!-- ==== offer start ==== -->
+  <section class="section offer fade-wrapper light">
+    <div class="container">
+      <div class="row gaper">
+        <div class="col-12 col-lg-5">
+          <div class="offer__content section__content">
+            <span class="sub-title">
+              WHAT WE OFFER
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h2 class="title title-anim">
+              Giving Your Business Some Great Ideas
+            </h2>
+            <div class="paragraph">
+              <p>
+                Bring to the table win-win survival strategies to ensure
+                proactive domination. At the end of the day, going forward, a
+                new normal that has evolved from generation on the runway
+                heading towards a streamlined cloud solution going forward
+                porttitor dictum sapien.
+              </p>
+            </div>
+            <div class="section__content-cta">
+              <a href="our-services.html" class="btn btn--secondary"
+                >view all services</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 col-xl-6 offset-xl-1">
+          <div class="offer__cta">
+            <div class="offer__cta-single fade-top">
+              <span class="sub-title">
+                01
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+              <h2>
+                <a href="service-single.html">
+                  uI / uX experience
+                  <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                </a>
+              </h2>
+              <div class="offer-thumb-hover d-none d-md-block"></div>
+            </div>
+            <div class="offer__cta-single fade-top">
+              <span class="sub-title">
+                02
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+              <h2>
+                <a href="service-single.html">
+                  web development
+                  <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                </a>
+              </h2>
+              <div class="offer-thumb-hover d-none d-md-block"></div>
+            </div>
+            <div class="offer__cta-single fade-top">
+              <span class="sub-title">
+                03
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+              <h2>
+                <a href="service-single.html">
+                  digital marketing
+                  <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                </a>
+              </h2>
+              <div class="offer-thumb-hover d-none d-md-block"></div>
+            </div>
+            <div class="offer__cta-single fade-top">
+              <span class="sub-title">
+                04
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+              <h2>
+                <a href="service-single.html">
+                  product design
+                  <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                </a>
+              </h2>
+              <div class="offer-thumb-hover d-none d-md-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="public/assets/images/offer/star.png" alt="Image" class="star" />
+    <div class="lines d-none d-lg-flex">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </section>
+  <!-- ==== / offer end ==== -->
+
+  <TestimonialSection />
+
+  <!-- ==== blog start ==== -->
+  <section class="section blog fade-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="section__header text-center">
+            <span class="sub-title">
+              news & Blog
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h2 class="title title-anim">what's new in blog</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row gaper">
+        <div class="col-12 col-md-6">
+          <div class="blog__single fade-top">
+            <div class="blog__single-thumb topy-tilt">
+              <a href="blog-single.html">
+                <img src="assets/images/blog/one.png" alt="Image" />
+              </a>
+            </div>
+            <div class="blog__single-content">
+              <h4>
+                <a href="blog-single.html"
+                  >A Simple Social Media Marketing Checklist</a
+                >
+              </h4>
+              <div class="blog__single-meta">
+                <a href="blog.html" class="sub-title">
+                  creative
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p>MARCH 23, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="blog__single fade-top">
+            <div class="blog__single-thumb topy-tilt">
+              <a href="blog-single.html">
+                <img src="assets/images/blog/two.png" alt="Image" />
+              </a>
+            </div>
+            <div class="blog__single-content">
+              <h4>
+                <a href="blog-single.html"
+                  >Transforming Challenges into Opportunities</a
+                >
+              </h4>
+              <div class="blog__single-meta">
+                <a href="blog.html" class="sub-title">
+                  creative
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p>MARCH 23, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==== / blog end ==== -->
+
+  <SponsorSection />
+
+  <!-- ==== next page start ==== -->
+  <section class="section next-page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="section__header text-center">
+            <a href="#" class="sub-title mb-0">
+              Next Page
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <TextSlider type="next" title="about us" href="#" />
+    <div class="lines d-none d-lg-flex">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </section>
+  <!-- ==== / next page end ==== -->
+
+ 
+</MainLayout>

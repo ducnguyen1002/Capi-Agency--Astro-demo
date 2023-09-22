@@ -1,0 +1,31 @@
+---
+import {working_process} from "@data";
+import WorkingProcessItem from "./WorkingProcessItem.astro";
+---
+
+<section class="section ux-process fade-wrapper">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="section__header text-center">
+          <span class="sub-title">
+            UX Process
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <h2 class="title title-anim">working UX Process</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="service-f-wrapper">
+          {
+            working_process.map(process => (
+              <WorkingProcessItem name={process.name} details={process.details}/>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

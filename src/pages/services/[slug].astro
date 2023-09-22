@@ -1,0 +1,90 @@
+---
+import PageBanner from "@components/common/PageBanner.astro";
+import WorkingProcessSection from "@components/common/WorkingProcessSection.astro";
+import { services } from "@data";
+import MainLayout from "@layouts/MainLayout.astro";
+
+export const getStaticPaths = () => {
+  const serviceParams = services.map((service) => ({
+    params: { slug: service.slug },
+  }));
+
+  return [...serviceParams];
+};
+
+const { slug } = Astro.params;
+
+const service = services.find((service) => service.slug == slug);
+---
+
+<MainLayout title={service.name}>
+  <PageBanner
+    pageName={service.name}
+    pageBreadcrumb={service.name}
+    pageDescription=""
+  />
+
+  <!-- ==== service details start ==== -->
+  <section class="section service-details fade-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+          <div class="service-details__slider">
+            <div class="service-details__slider-single">
+              <div class="poster fade-top">
+              </div>
+              <div class="details-group section__cta text-start">
+                <h3 class="title-anim">Why do we use it?</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                </p>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                  generators on the Internet tend to repeat predefined chunks as
+                  necessary,
+                </p>
+              </div>
+              <div class="section__content-cta">
+                <div class="row gaper">
+                  <div class="col-12 col-lg-7">
+                    <div class="details-group">
+                      <h3 class="title-anim">Our approach</h3>
+                      <p>
+                        We employ proven website design strategies in each and
+                        every work, whether it's a simple informational website
+                        or a full-blown e-commerce website.
+                      </p>
+                      <p>
+                        First we create sitemaps, user flows, and wireframes to
+                        hone your message and desired interaction. Then comes
+                        our aesthetically remarkable designs. Every design is
+                        optimized for mobile and desktop to create a consistent.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <div class="poster-small">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==== / service details end ==== -->
+
+  <WorkingProcessSection/>
+</MainLayout>

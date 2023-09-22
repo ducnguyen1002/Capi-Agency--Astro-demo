@@ -1,0 +1,121 @@
+{
+    "services":[
+        {
+            "name":"UI/UX Design",
+            "slug":"ui-ux-design",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Branding",
+             "slug":"branding",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Mobile App Design",
+            "slug":"mobile-app-design",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Website development",
+            "slug":"website-development",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        }
+
+    ],
+    "working_process":[
+        {
+            "name":"User Research",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        },
+         {
+            "name":"story board",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        },
+         {
+            "name":"wireframing",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        },
+         {
+            "name":"Prototyping",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        },
+         {
+            "name":"usability testing",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        },
+         {
+            "name":"UI Design",
+            "details":"To deliver the best experience, we thoroughly research and evaluate your product and its users to create a strategic foundation for the brand."
+        }
+    ],
+    "projects":[
+        {
+            "name":"UI/UX Design",
+            "slug":"ui-ux-design",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Branding",
+             "slug":"branding",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Mobile App Design",
+            "slug":"mobile-app-design",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        },
+         {
+            "name":"Website development",
+            "slug":"website-development",
+            "details":[
+                "Define Idea",
+                "Competitor Research",
+                "Target Audience",
+                "Idea Validation",
+                "Customer Value"
+            ]
+        }
+    ]
+}

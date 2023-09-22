@@ -1,0 +1,19 @@
+---
+import PageBanner from "@components/common/PageBanner.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import CTA2 from "@components/common/CTA2.astro";
+import ProjectsList from "@components/projects/ProjectsList.astro";
+import WorkStepSection from "@components/common/WorkStepSection.astro";
+---
+
+<MainLayout title="Capi Agency's Services">
+  <PageBanner
+    pageName="Our projects"
+    pageBreadcrumb="projects"
+    pageDescription="We're an UK-based top-notch design agency committed to partnering with good companies and hiring the right people for the right roles."
+  />
+  <ProjectsList />
+
+  <WorkStepSection />
+  <CTA2 />
+</MainLayout>

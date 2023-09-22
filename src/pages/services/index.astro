@@ -1,0 +1,32 @@
+---
+import PageBanner from "@components/common/PageBanner.astro";
+import ServiceTable from "@components/services/ServiceTable.astro";
+import VideoModal from "@components/common/VideoModal.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import WorkingProcessSection from "@components/common/WorkingProcessSection.astro";
+import TestimonialSection from "@components/common/TestimonialSection.astro";
+import CTA2 from "@components/common/CTA2.astro";
+---
+
+<MainLayout title="Capi Agency's Services">
+  <PageBanner
+    pageName="Our services"
+    pageBreadcrumb="services"
+    pageDescription="We're an UK-based top-notch design agency committed to partnering with good companies and hiring the right people for the right roles."
+  />
+
+  <ServiceTable />
+
+  <VideoModal
+    imageURL="assets/images/video-frame-two.png"
+    videoURL="https://www.youtube.com/watch?v=RvreULjnzFo"
+    modalImgURL="assets/images/modal-bg.png"
+  />
+
+  <WorkingProcessSection/>
+
+  <TestimonialSection/>
+
+  <CTA2/>
+  
+</MainLayout>

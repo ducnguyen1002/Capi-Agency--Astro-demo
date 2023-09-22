@@ -1,0 +1,16 @@
+---
+const {title, percent} = Astro.props;
+---
+
+<div class="skill-bar-single">
+  <div class="skill-bar-title">
+    <p class="primary-text">{title}</p>
+  </div>
+  <div class="skill-bar-wrapper" data-percent=`${percent}`>
+    <div class="skill-bar">
+      <div class="skill-bar-percent">
+        <span class="percent-value"></span>
+      </div>
+    </div>
+  </div>
+</div>

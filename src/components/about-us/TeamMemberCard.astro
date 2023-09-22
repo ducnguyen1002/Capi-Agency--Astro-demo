@@ -1,0 +1,104 @@
+---
+import SkillBar from "../common/SkillBar.astro";
+const {
+  fullName,
+  avatarURL,
+  shortDescription,
+  role,
+  description,
+  skills
+} = Astro.props;
+
+const {title, percent} = skills[0];
+const {title: title2, percent: percent2} = skills[1];
+---
+
+<div class="team-s__slider-single">
+  <div class="team-wrap">
+    <div class="thumb">
+      <a href="team-single.html">
+        <img src={avatarURL} alt="Image" />
+      </a>
+      <div class="thumb__content" data-background="assets/images/teams/bg.png">
+        <div class="info">
+          <p>{shortDescription}</p>
+        </div>
+        <h4>
+          <a href="team-single.html">{fullName}</a>
+        </h4>
+        <p>{role}</p>
+        <div class="social-alt">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="share us on facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            aria-label="share us on twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.pinterest.com/"
+            target="_blank"
+            aria-label="share us on pinterest"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="intro">
+        <h5>
+          <a href="team-single.html">{fullName}</a>
+        </h5>
+        <p>{role}</p>
+      </div>
+      <hr />
+      <div class="inner">
+        <p>
+          {description}
+        </p>
+        <div class="skill-wrap">
+          <SkillBar percent={percent} title={title} />
+          <SkillBar percent={percent2} title={title2} />
+        </div>
+      </div>
+      <div class="social">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="share us on facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          aria-label="share us on twitter"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.pinterest.com/"
+          target="_blank"
+          aria-label="share us on pinterest"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="share us on instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

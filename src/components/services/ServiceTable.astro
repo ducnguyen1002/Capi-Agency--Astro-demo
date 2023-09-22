@@ -1,0 +1,36 @@
+---
+import ServiceItem from "./ServiceItem.astro";
+import {services} from "@data";
+---
+
+<section class="section service-t">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-t__slider">
+            {
+              services.map((service, index)=>(
+                  <ServiceItem service={service} index={index + 1}/>
+              ))
+            }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-group">
+    <a
+      href="javascript:void(0)"
+      aria-label="previous item"
+      class="slide-btn prev-service-t"
+    >
+      <i class="fa-light fa-angle-left"></i>
+    </a>
+    <a
+      href="javascript:void(0)"
+      aria-label="next item"
+      class="slide-btn next-service-t"
+    >
+      <i class="fa-light fa-angle-right"></i>
+    </a>
+  </div>
+</section>

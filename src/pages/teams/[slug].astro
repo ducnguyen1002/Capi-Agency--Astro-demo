@@ -1,0 +1,132 @@
+---
+import CTA2 from "@components/common/CTA2.astro";
+import PageBanner from "@components/common/PageBanner.astro";
+import SkillBar from "@components/common/SkillBar.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+import type { GetStaticPaths } from "astro";
+export const getStaticPaths = (() => {
+  return [{ params: { slug: "example" } }];
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params;
+---
+
+<MainLayout title={slug}>
+    
+  <PageBanner
+    pageName="Example Member Name"
+    pageBreadcrumb="team member"
+    pageDescription="We're an UK-based top-notch design agency committed to partnering with good companies and hiring the right people for the right roles."
+  />
+
+  <!-- ==== team details start ==== -->
+  <section class="section pb-0 team-det fade-wrapper">
+    <div class="container">
+      <div class="row gaper">
+        <div class="col-12 col-lg-5 col-xxl-4">
+          <div class="team-det__thumb fade-top">
+            <img src="assets/images/teams/one.png" alt="Image" />
+            <div class="social-alt">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                aria-label="share us on facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                aria-label="share us on twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.pinterest.com/"
+                target="_blank"
+                aria-label="share us on pinterest"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 col-xxl-8">
+          <div class="team-det__content fade-top">
+            <div class="intro">
+              <div class="intro-left">
+                <h4>Sana p. Lesh</h4>
+                <p>Senior engineer</p>
+              </div>
+              <div class="intro-right">
+                <a href="contact-us.html" class="btn btn--primary">
+                  Hire Me
+                  <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>About Me</h5>
+              <p>
+                Proin ultricies ultricies est vitae cursus. Nulla sit amet
+                suscipit tortor. Maecenas dui erat, ornare eget tristique vitae,
+                rutrum pretium justo. Phasellus vitae consequat nisi, quis
+                luctus nisl. Praesent faucibus sem id massa semper ornare. Nam
+                eu magna at mi pellentesque mattis. Morbi at condimentum velit.
+                Phasellus aliquet, leo auctor volutpat ultrices, metus dolor
+                dictum enim, sed convallis lacus urna nec erat.
+              </p>
+            </div>
+            <div class="skill-wrap">
+                <SkillBar title="Wireframe" percent="75%"/>
+                <SkillBar title="Visual Design" percent="90%"/>
+                <SkillBar title="Wireframe" percent="75%"/>
+                <SkillBar title="Visual Design" percent="90%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="team-det__info fade-top">
+            <h4>Education background</h4>
+            <div class="group">
+              <h5>
+                Bachelor's degree,
+                <span>2010</span>
+              </h5>
+              <p>
+                Proin ultricies ultricies est vitae cursus. Nulla sit amet
+                suscipit tortor. Maecenas dui erat, ornare eget tristique vitae,
+                rutrum pretium justo. Phasellus vitae consequat nisi, quis
+                luctus nisl. Praesent faucibus sem id massa semper ornare. Nam
+                eu magna at mi pellentesque mattis. Morbi at condimentum velit.
+                Phasellus aliquet, leo auctor volutpat ultrices, metus dolor
+                dictum enim, sed convallis lacus urna nec erat.
+              </p>
+            </div>
+            <div class="group">
+              <h5>
+                Master's degree in design,
+                <span>2015</span>
+              </h5>
+              <p>
+                Proin ultricies ultricies est vitae cursus. Nulla sit amet
+                suscipit tortor. Maecenas dui erat, ornare eget tristique vitae,
+                rutrum pretium justo. Phasellus vitae consequat nisi, quis
+                luctus nisl. Praesent faucibus sem id massa semper ornare. Nam
+                eu magna at mi pellentesque mattis. Morbi at condimentum velit.
+                Phasellus aliquet, leo auctor volutpat ultrices, metus dolor
+                dictum enim, sed convallis lacus urna nec erat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==== / team details end ==== -->
+
+  <CTA2/>
+
+</MainLayout>

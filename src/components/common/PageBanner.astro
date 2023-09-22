@@ -1,0 +1,39 @@
+---
+const { pageName, pageDescription, pageBreadcrumb } = Astro.props;
+---
+
+
+<section
+  class="cmn-banner bg-img"
+  data-background="assets/images/banner/cmn-banner-bg.png"
+>
+  <div class="container">
+    <div class="row gaper align-items-center">
+      <div class="col-12 col-lg-5 col-xl-7">
+        <div class="text-center text-lg-start">
+          <h2 class="title title-anim">{pageName}</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">
+                  <i class="fa-solid fa-house"></i>
+                   Home
+                </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                {pageBreadcrumb}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 col-xl-5">
+        <div class="text-center text-lg-start">
+          <p class="primary-text">
+            {pageDescription}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

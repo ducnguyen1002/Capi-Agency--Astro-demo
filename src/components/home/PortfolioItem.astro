@@ -1,0 +1,19 @@
+---
+const {imageURL, href, title} = Astro.props;
+---
+
+<div class="col-12 col-sm-6 col-xl-3">
+  <div class="portfolio__single portfolio__single-active topy-tilt fade-top">
+    <a href={href}>
+      <img src={imageURL} alt="Image" />
+    </a>
+    <div class="portfolio__single-content">
+      <a href={href}>
+        <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+      </a>
+      <h4>
+        <a href={href}>{title}</a>
+      </h4>
+    </div>
+  </div>
+</div>

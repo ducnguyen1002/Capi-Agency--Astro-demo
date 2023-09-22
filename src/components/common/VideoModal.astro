@@ -1,0 +1,15 @@
+---
+const { videoURL, modalImgURL, imageURL, } = Astro.props;
+---
+
+<div class="video-modal">
+  <img src={modalImgURL} alt="Image" class="modal-bg" />
+  <a
+    class="video-frame video-btn"
+    href={videoURL}
+    target="_blank"
+  >
+    <img src={imageURL} alt="Image" />
+    <i class="fa-sharp fa-solid fa-play"></i>
+  </a>
+</div>

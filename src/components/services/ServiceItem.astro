@@ -1,0 +1,28 @@
+---
+const {service, index} = Astro.props;
+---
+
+<div class="service-t-single-wrapper">
+  <div class="service-t__slider-single">
+    <div class="intro">
+      <span class="sub-title">
+        {index}
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+      <h4>
+        <a href={`/services/${service.slug}`}>{service.name}</a>
+      </h4>
+    </div>
+    <ul>
+      {service.details.map((detail)=>(
+        <li>{detail}</li>
+      ))}
+    </ul>
+    <div class="cta">
+      <a href={`/services/${service.slug}`}>
+        <i class="icon-arrow-top-right"></i>
+        <span>service details</span>
+      </a>
+    </div>
+  </div>
+</div>
